@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HTML</title>
+  <script src="https://kit.fontawesome.com/a613b9aff7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+ 
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1><span class="logo-j">J</span>ames</h1>
+        </div>
+       
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span class="style-j">James</span><br> from Nigeria</h1>
+      </div>
+    </div>
+   
+  </div>
+ 
+  <div id="about">
+    <div class="container">
+     
+      <div class="row">
+       
+        <div class="about-col-1">
+          <img src="img/images (2).jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>As a soon-to-be graduate in Computer Science from Federal Polytechnic Ado-Ekiti, I'm excited to take my first step into the tech industry. With a solid foundation in HTML, CSS and Javascript, I'm looking forward to gaining valuable experience and insights from a talented team, and learning how my skills and creativity can fit in and grow. I'm passionate about learning, growth, and collaboration. Let's connect and explore how I can bring my energy and enthusiasm to your team.</p>
+         
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+         
+          <div class="tab-contents active-tab" id="skills">
+           <ul>
+            <li><span>2022-2024<br></span>Computer Science</li>
+           </ul>
+          </div>
+         
+          <div class="tab-contents" id="experience">
+           <ul>
+            <li><span>2023<br></span>Personal Projects</li>
+           </ul>
+          </div>
+         
+          <div class="tab-contents" id="education">
+           <ul>
+            <li><span>2022-2023<br></span>Computer Science at Ado Polytechnic</li>
+            <li><span>2023<br></span>Responsive Web Design at FreeCodeCamp</li>
+           </ul>
+          </div>
+         
+        </div>
+      </div>
+     
+    </div>
+  </div>
+ 
+  <!-- ------------portfolio------------ -->
+  <div id="Portfolio">
+  <div class="container">
+  <h1 class="sub-title">My Work</h1>
+ 
+  <div class="work-list">
+  <div class="work">
+  <img src="img/Image(5).jpg">
+  <div class="layer">
+  <h3>Taco Shop Wedsite</h3>
+  <p>This is a website for a Taco shop.</p>
+  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+ 
+  </div>
+  </div>
+  <div class="work">
+  <img src="img/image(6).jpg">
+  <div class="layer">
+  <h3>This is a role playing game, which involves dungeon raiding, dragon slaying.</h3>
+  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+  </div>
+  <div class="work">
+  <img src="img/image(7).jpg">
+  <div class="layer">
+  <h3>This is a blackjack games.</h3>
+  <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+  </div>
+  </div>
+  <a href="#" class="btn">See More</a>
+ 
+  </div>
+  </div>
+ 
+ 
+  <!-- ---------- contact --------- -->
+  <div id="contact">
+     <div class="container">
+        <div class="row">
+           <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i> jamesologunsua@gmail.com</p>
+              <p><i class="fa-solid fa-square-phone"></i> 08142745369</p>
+              <div class="social-icons">
+                 <a href="https://m.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                 <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                 <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <div href="images/CV 01.pdf" download class="btn btn2">Download CV</div>
+           </div>
+
+
+           <div class="contact-right">
+            <form action="">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+           </div>
+         
+        </div
+     </div>
+
+
+     <div class="copyright">
+      <p>Copyright &copy; James. All Right Reserved.</p>
+     </div>
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
